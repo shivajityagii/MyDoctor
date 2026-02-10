@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyDoctor - Your Healthcare Solution | Made in India</title>
+    <meta name="description" content="MyDoctor - Complete healthcare solution by Devesh Giri & Uday Gaur. Book appointments, order medicines, emergency ambulance. Made in India.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-stethoscope"></i>
+                <span>MyDoctor</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#feedback" class="nav-link">Feedback</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#" class="nav-link login-btn" onclick="openLogin()">Login / Signup</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">GET YOUR PERSONALISED DOCTOR</h1>
+                <p class="hero-subtitle">GET THE BEST DOCTOR FOR CONSULTENCY</p>
+                <div class="hero-buttons">
+                    <button class="btn emergency-btn" onclick="callAmbulance()">
+                        <i class="fas fa-ambulance"></i>
+                        need Ambulence ?
+                    </button>
+                    <button class="btn appointment-btn" onclick="showComingSoon()">
+                        Appointment
+                    </button>
+                </div>
+            </div>
+
+            <!-- Simple, Clean, Attractive Logo -->
+            <div class="hero-logo">
+                <div class="simple-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h2 class="logo-title">MyDoctor</h2>
+                    <p class="logo-subtitle">Your Trusted Healthcare Companion</p>
+                    <div class="logo-features">
+                        <span class="feature-badge">24/7 Available</span>
+                        <span class="feature-badge">Verified Doctors</span>
+                        <span class="feature-badge">Made in India</span>
+                    </div>
+                </div>
+
+                <!-- Floating Medical Icons -->
+                <div class="floating-element element-1">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="floating-element element-2">
+                    <i class="fas fa-pills"></i>
+                </div>
+                <div class="floating-element element-3">
+                    <i class="fas fa-user-md"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive healthcare solutions at your fingertips</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3>Order Medicines</h3>
+                    <p>Order medicines online and get detailed information about medications</p>
+                    <button class="service-btn" onclick="showComingSoon()">Explore</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Book Appointment</h3>
+                    <p>Online & offline appointments with nearby doctors and clinics</p>
+                    <button class="service-btn" onclick="showComingSoon()">Book Now</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <h3>Disease Information</h3>
+                    <p>Get comprehensive information about diseases and symptoms</p>
+                    <button class="service-btn coming-soon" onclick="showComingSoon()">Coming Soon</button>
+                </div>
+
+                <div class="service-card emergency">
+                    <div class="service-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h3>Emergency Ambulance</h3>
+                    <p>Quick ambulance service from nearby hospitals in emergencies</p>
+                    <button class="service-btn emergency" onclick="callAmbulance()">Call Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <p class="about-description">
+                Welcome MyDoctor—your solution for urgent medical care. We bridge the gap between immediate healthcare needs and professional care, ensuring peace of mind when it matters most.
+            </p>
+
+            <div class="services-list">
+                <h3>Our Services:</h3>
+                <div class="service-item">
+                    <i class="fas fa-video"></i>
+                    <div>
+                        <h4>Emergency Virtual Doctor Appointments</h4>
+                        <p>Connect with doctors instantly during emergencies.</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <i class="fas fa-first-aid"></i>
+                    <div>
+                        <h4>First Aid Tutorials</h4>
+                        <p>Learn essential first aid skills with our videos.</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <i class="fas fa-laptop-medical"></i>
+                    <div>
+                        <h4>Online Doctor Appointments</h4>
+                        <p>Consult with doctors from home.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="feedback">
+        <div class="container">
+            <h2 class="section-title">Feedback & Suggestions</h2>
+            <p class="section-subtitle">Help us improve our services</p>
+
+            <div class="feedback-container">
+                <form class="feedback-form" id="feedbackForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedbackType">Feedback Type</label>
+                        <select id="feedbackType" name="feedbackType" required>
+                            <option value="">Select Type</option>
+                            <option value="suggestion">Suggestion</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="compliment">Compliment</option>
+                            <option value="bug-report">Bug Report</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rating">Rate Our Service</label>
+                        <div class="rating-stars" id="rating">
+                            <i class="far fa-star" data-rating="1"></i>
+                            <i class="far fa-star" data-rating="2"></i>
+                            <i class="far fa-star" data-rating="3"></i>
+                            <i class="far fa-star" data-rating="4"></i>
+                            <i class="far fa-star" data-rating="5"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Share your thoughts, suggestions, or concerns..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Submit Feedback
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Get in touch with our healthcare experts</p>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Emergency Hotline</h3>
+                            <p>+91 102 (24/7)</p>
+                            <p>+91 9876543210</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Support</h3>
+                            <p>support@mydoctor.com</p>
+                            <p>emergency@mydoctor.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Head Office</h3>
+                            <p>123 Healthcare Street</p>
+                            <p>Medical District, Delhi 110001</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="firstName" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="lastName" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="appointment">Appointment Support</option>
+                                <option value="technical">Technical Issue</option>
+                                <option value="emergency">Emergency Assistance</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="#home" class="footer-logo">
+                        <i class="fas fa-stethoscope"></i>
+                        <span>MyDoctor</span>
+                    </a>
+                    <p>Your trusted healthcare companion, providing quality medical services and emergency care when you need it most.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Order Medicines</a></li>
+                        <li><a href="#">Book Appointment</a></li>
+                        <li><a href="#">Emergency Care</a></li>
+                        <li><a href="#">Disease Info</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Emergency Contact</h3>
+                    <p><i class="fas fa-phone"></i> +91 102</p>
+                    <p><i class="fas fa-envelope"></i> emergency@mydoctor.com</p>
+                    <p><i class="fas fa-clock"></i> 24/7 Available</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-credits">
+                    <p>&copy; 2025 MyDoctor. All rights reserved.</p>
+                    <div class="credits">
+                        <p>🇮🇳 <strong>Made in India</strong></p>
+                        <p>💻 <strong>Developed by Devesh Giri & Uday Gaur</strong></p>
+                        <p>📧 Contact Developer: <a href="mailto:er.deveshgiri@gmail.com">er.deveshgiri@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="login-container">
+                <h2>Login / Sign Up</h2>
+                <div class="auth-tabs">
+                    <button class="tab-btn active" onclick="showLogin()">Login</button>
+                    <button class="tab-btn" onclick="showSignup()">Sign Up</button>
+                </div>
+
+                <!-- Login Form -->
+                <form id="loginForm" class="auth-form active">
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn auth-btn">Login</button>
+                    <p class="auth-link">Forgot password? <a href="#">Reset here</a></p>
+                </form>
+
+                <!-- Signup Form -->
+                <form id="signupForm" class="auth-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Confirm Password" required>
+                    </div>
+                    <button type="submit" class="btn auth-btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
